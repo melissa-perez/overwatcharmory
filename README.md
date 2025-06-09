@@ -2,7 +2,7 @@
 
 ## General
 
-- [ ] Uses a public Github repo.
+- [x] Uses a public Github repo.
 - [ ] Scaffolded using Vite with the `react` (not `react-ts`, `react-swc`, or `react-swc-ts`) template.
 - [ ] Uses NPM
 - [ ] Installs and uses dependencies: "react-router".
