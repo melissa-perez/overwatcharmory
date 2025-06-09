@@ -3,13 +3,13 @@
 ## General
 
 - [x] Uses a public Github repo.
-- [ ] Scaffolded using Vite with the `react` (not `react-ts`, `react-swc`, or `react-swc-ts`) template.
-- [ ] Uses NPM
-- [ ] Installs and uses dependencies: "react-router".
+- [x] Scaffolded using Vite with the `react` (not `react-ts`, `react-swc`, or `react-swc-ts`) template.
+- [x] Uses NPM
+- [x] Installs and uses dependencies: "react-router".
 
 ## Coding Practices
 
-- [ ] Formatting should be neat and consistent across the codebase. Prettier can help with this!
+- [x] Formatting should be neat and consistent across the codebase. Prettier can help with this!
 - [ ] Only 1 component per file unless using Styled-Components.
 - [ ] Component names should be in PascalCase and filenames should match the components they house.
 - [ ] Minimize the use of implicit type coercion.
