@@ -154,7 +154,7 @@ const powers = [
     }
 ];
 
-const items = [
+const generalItems = [
     {
         "weapon": {
             "common": [{
@@ -210,7 +210,7 @@ const items = [
             {
                 name: "Shieldbuster",
                 price: 4000,
-                description: "5% Weapon Power ",
+                description: "5% Weapon Power",
                 details: "After dealing damage to Shields or Armor, gain 15% Attack Speed for 1s.",
                 icon: "",
             },
@@ -224,7 +224,7 @@ const items = [
             {
                 name: "Technoleech",
                 price: 4500,
-                description: " 5% Weapon Power\n10% Weapon Lifesteal",
+                description: "5% Weapon Power\n10% Weapon Lifesteal",
                 details: "",
                 icon: "",
             },
@@ -287,7 +287,7 @@ const items = [
             }, {
                 name: "El-Sa'ka Suppressor",
                 price: 11000,
-                description: "10% WeapIgnoreon Power",
+                description: "10% Weapon Power",
                 details: "Critical Hits apply 30% Healing Reduction to the target for 2s.",
                 icon: "",
             }, {
@@ -317,13 +317,296 @@ const items = [
             "common": [{
                 name: "Charged Plating",
                 price: 1000,
-                description: "After you spend your Ultimate Charge, gain 25 Armor and 10% Ability Power for the rest of the round.",
+                description: "",
+                details: "After you spend your Ultimate Charge, gain 25 Armor and 10% Ability Power for the rest of the round.",
                 icon: "",
 
+            }, {
+                name: "Power Playbook",
+                price: 1000,
+                description: "10% Ability Power",
+                details: "",
+                icon: "",
+            }, {
+                name: "Shady Spectacles",
+                price: 1000,
+                description: "10% Ability Lifesteal",
+                details: "",
+                icon: "",
+            }, {
+                name: "Winning Attitude",
+                price: 1500,
+                description: "25 Health",
+                details: "When you die, gain 15% Ultimate Charge.",
+                icon: "",
             }],
-            "rare": [{}],
-            "epic": [{}]
+            "rare": [{
+                name: "Custom Stock",
+                price: 3750,
+                description: "5% Weapon Power\n10% Ability Power",
+                details: "",
+                icon: "",
+            }, {
+                name: "Biolight Overflow",
+                price: 4000,
+                description: " 25 Health\n5% Ability Power",
+                details: "When you spend your Ultimate Charge, grant nearby allies 50 Overhealth for 3s.",
+                icon: "",
+            }, {
+                name: "Energized Bracers",
+                price: 4000,
+                description: " 10% Ability Power\n10% Ability Lifesteal",
+                details: "",
+                icon: "",
+            }, {
+                name: "Junker Whatchamajig",
+                price: 4000,
+                description: "25% Starting Ultimate Charge",
+                details: "",
+                icon: "",
+            }, {
+                name: "Wrist Wraps",
+                price: 4000,
+                description: "% Ability Power\n10% Attack Speed",
+                details: "",
+                icon: "",
+            }, {
+                name: "Multi-Tool",
+                price: 4500,
+                description: " 10% Ability Power\n5% Cooldown Reduction",
+                details: "",
+                icon: "",
+            }, {
+                name: "Nano Cola",
+                price: 6000,
+                description: "20% Ability Power",
+                details: "",
+                icon: "",
+            },],
+            "epic": [{
+                name: "Three-tap Tommygun",
+                price: 9500,
+                description: " 10% Ability Power\n10% Attack Speed",
+                details: "After using an ability, your 3 next instances of Weapon Damage deal additional damage equal to 3% of the target's Life.",
+                icon: "",
+            }, {
+                name: "Biotech Maximizer",
+                price: 10000,
+                description: " 25 Health\n10% Ability Power",
+                details: "When you use an ability that heals, reduce its cooldown by 5% for each unique ally it heals.",
+                icon: "",
+            }, {
+                name: "Catalytic Crystal",
+                price: 10000,
+                description: "15% Ability Power",
+                details: "Ability Damage and Healing grants 20% more Ultimate Charge.",
+                icon: "",
+            }, {
+                name: "Lumérico Fusion Drive",
+                price: 10000,
+                description: "50 Armor\n15% Ability Power ",
+                details: "When you use an ability, restore 50 Armor or Shields over 2s.",
+                icon: "",
+            }, {
+                name: "Superflexor",
+                price: 10000,
+                description: "25 Health\n10% Weapon Power",
+                details: "When you deal Weapon Damage or Healing, gain 5% Ability Power for 3s, stacking up to 5 times.",
+                icon: "",
+            }, {
+                name: "Cybervenom",
+                price: 10500,
+                description: "10% Ability Power\n5% Cooldown Reduction",
+                details: "Dealing Ability damage applies 30% healing reduction for 2s.",
+                icon: "",
+            }, {
+                name: "Iridescent Iris",
+                price: 11000,
+                description: "20% Ability Power\n10% Cooldown Reduction",
+                details: "After spending your Ultimate Charge, gain 100 Overhealth for 3s.",
+                icon: "",
+            }, {
+                name: "Liquid Nitrogen",
+                price: 11000,
+                description: " 25 Health\n10% Ability Power",
+                details: "Dealing Ability Damage slows the target's Move Speed by 20% for 3s.",
+                icon: "",
+            }, {
+                name: "Mark of the Kitsune",
+                price: 11000,
+                description: "10% Ability Power",
+                details: "When you use an ability, your next instance of Weapon Damage or Healing deals 25 bonus damage or healing.",
+                icon: "",
+            }, {
+                name: "Champion's Kit",
+                price: 14000,
+                description: "35% Ability Power",
+                details: "",
+                icon: "",
+            },]
         }
     },
-    { "survival": { "common": [{}], "rare": [{}], "epic": [{}] } }
+    {
+        "survival": {
+            "common": [{
+                name: "Adrenaline Shot",
+                price: 1500,
+                description: "25 Health",
+                details: "Health Packs grant 20% Move Speed for 5s and 50 Overhealth.",
+                icon: "",
+            }, {
+                name: "Electrolytes",
+                price: 1500,
+                description: "",
+                details: "At the start of the round and every time you respawn, gain 100 unrecoverable Overhealth.",
+                icon: "",
+            }, {
+                name: "Field Rations",
+                price: 1000,
+                description: "10 Health ",
+                details: "At the start of the round and when you first respawn, gain 20% Move Speed for 10s while out of combat.",
+                icon: "",
+            }, {
+                name: "Armored Vest",
+                price: 1500,
+                description: "25 Armor ",
+                details: "",
+                icon: "",
+            }, {
+                name: "First Aid Kit",
+                price: 1500,
+                description: "25 Shields",
+                details: "Reduce the time before your Life begins regenerating by 33%.",
+                icon: "",
+            }, {
+                name: "Heartbeat Sensor",
+                price: 1500,
+                description: "5% Move Speed",
+                details: "Enemies below 30% Life are Revealed to you.",
+                icon: "",
+            }, {
+                name: "Siphon Gloves",
+                price: 1500,
+                description: "25 Health",
+                details: "[Quick Melee] damage heals for 25 Life.",
+                icon: "",
+            }, {
+                name: "Running Shoes",
+                price: 1000,
+                description: "10 Health",
+                details: "At the start of the round and when you first respawn, gain 20% Move Speed for 10s while out of combat.",
+                icon: "",
+            }],
+            "rare": [{
+                name: "Reinforced Titanium",
+                price: 3750,
+                description: "25 Shields",
+                details: "While you have Shields, take 15% reduced Ability Damage.",
+                icon: "",
+            }, {
+                name: "Cushioned Padding",
+                price: 4000,
+                description: "25 Shields\n-40% Negative Effect Duration",
+                details: "When affected by Stun, Sleep, or Hinder, restore 10% of your max Life over 3s.",
+                icon: "",
+            }, {
+                name: "Ironclad Exhaust Ports",
+                price: 4000,
+                description: "5% Cooldown Reduction",
+                details: "When you use an ability, gain 25 Overhealth for 3s.",
+                icon: "",
+            }, {
+                name: "Vishkar Condensor",
+                price: 4000,
+                description: "25 Shields",
+                details: "Convert 100 Health into Shields.",
+                icon: "",
+            }, {
+                name: "Vital-e-tee",
+                price: 4000,
+                description: "10 Armor",
+                details: "Convert 100 Health into Armor.",
+                icon: "",
+            }, {
+                name: "Crusader Hydraulics",
+                price: 4500,
+                description: "25 Armor",
+                details: "While you have Armor, take 10% reduced Weapon Damage.",
+                icon: "",
+            }, {
+                name: "Iron Eyes",
+                price: 4500,
+                description: "25 Shields",
+                details: "You take 20% reduced damage from Critical Hits.",
+                icon: "",
+            }, {
+                name: "Meka-Z Series",
+                price: 5000,
+                description: "8% Health, Armor, Shields",
+                details: "",
+                icon: "",
+            },],
+            "epic": [{
+                name: "Geneticist's Vial",
+                price: 9000,
+                description: "25 Health",
+                details: "The first time you would die each round, revive instead with 250 Life after 3s.",
+                icon: "",
+            }, {
+                name: "Bloodbound",
+                price: 9000,
+                description: "50 Health",
+                details: "The last enemy to deal a final blow to you is Revealed when nearby. Deal 10% more damage to them and take 10% reduced damage from them.",
+                icon: "",
+            }, {
+                name: "Divine Intervention",
+                price: 9500,
+                description: "50 Shields",
+                details: "When you take more than 100 damage at once, restore 15 percent of damage taken and start regenerating your shields.",
+                icon: "",
+            }, {
+                name: "Gloomgauntlet",
+                price: 10000,
+                description: "50 Armor\n15% Melee Damage",
+                details: "[Melee] damage grants 10% Move Speed and restores 5% of Max Life over 2s.",
+                icon: "",
+            }, {
+                name: "Martian Mender",
+                price: 9500,
+                description: " 25 Health\n10% Cooldown Reduction",
+                details: "Restore 3% of your Life every 1s.",
+                icon: "",
+            }, {
+                name: "Phantasmic Flux",
+                price: 10000,
+                description: "10% Weapon Power\n10% Ability Power\n15% Weapon Lifesteal\n15% Ability Lifesteal",
+                details: "While at full Life, Lifesteal grants up to 100 Overhealth.",
+                icon: "",
+            }, {
+                name: "Rüstung von Wilhelm",
+                price: 10000,
+                description: "15% Health, Armor, Shields",
+                details: "While below 30% Life, gain 10% Damage Reduction.",
+                icon: "",
+            }, {
+                name: "Vanadium Injection",
+                price: 10000,
+                description: "50 Shields",
+                details: "While at 100% Ultimate Charge, gain:\n50 Health\n10% Weapon Power\n10% Ability Power\n10% Attack Speed\n10% Cooldown Reduction\n10% Move Speed",
+                icon: "",
+            }, {
+                name: "Nebula Conduit",
+                price: 11000,
+                details: "Prevent 15% of incoming damage and instead take that prevented damage over 3s.",
+                description: "50 Health\n5% Weapon Power",
+                icon: "",
+            }, {
+                name: "Ogundimu Reduction Field",
+                price: 11000,
+                description: "50 Armor",
+                details: "When you take damage, gain 0.5% damage reduction for 1s, stacking up to 20 times.",
+                icon: "",
+            },]
+        }
+    }
 ];
